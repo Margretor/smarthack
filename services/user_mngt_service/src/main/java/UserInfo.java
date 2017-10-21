@@ -57,6 +57,4 @@ public class UserInfo {
     public void setRights(HashMap<String, Integer> rights) {
         this.rights = rights;
     }
-
-
 }
