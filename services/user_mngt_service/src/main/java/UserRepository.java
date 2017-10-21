@@ -15,6 +15,4 @@ public interface UserRepository extends Repository<User, String>{
 
     UserInfo getUserInfo(UUID userId);
 
-
-
 }
