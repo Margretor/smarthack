@@ -1,0 +1,76 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="create_task.css">
+	</head>
+	<body ng-app="">
+		<div class="toolbar">
+			<div class="dropdown">
+				<button class="dropbtn">Tasks</button>
+				<div class="dropdown-content">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Team</button>
+				<div class="dropdown-content">
+					<a href="#">My teams</a>
+					<a href="#">Create team</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Messages</button>
+			</div>
+			<div class="dropdown settings">
+				<img class="profile" src="icon.png"/>
+				<div class="dropdown-content">
+					<a href="#">Settings</a>
+					<a href="#">Logout</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="input_form">
+			<form action="TODO">
+				<table>
+					<tr><td>Title</td></tr>
+					<tr><td>
+						<input type="text" name="title"/>
+					</td></tr>
+					<tr><td>Description</td></tr>
+					<tr><td>
+						<textarea  class="description" cols="40" rows="5" type="text" name="description"></textarea>
+					</td></tr>
+					<tr><td>Owner</td></tr>
+					<tr><td><input type="text"/></td></tr>
+					<tr><td>Priority</td></tr>
+					<tr><td>
+						<select name="priority">
+							<option value="hight">Hight</option>
+							<option value="medium">Medium</option>
+							<option value="low">Low</option>
+						</select>
+					</td></tr>
+					<tr><td>Type</td></tr>
+					<tr><td>
+						<select name="type">
+							<option value="task">Task</option>
+							<option value="bug">Bug</option>
+						</select>
+					</td></tr>					
+					<tr><td>Deadline</td></tr>
+					<tr><td><input type="date" name="deadline"></td></tr>
+					<tr><td>Estimation</td></tr>
+					<tr><td><input class="nb" type="number" placeholder="Days" name="days"/></td></tr>
+					<tr><td><input class="nb" type="number" placeholder="Hours" name="hours"/></td></tr>
+					<tr><td><input class="nb" type="number" placeholder="Minutes" name="minutes"/></td></tr>
+					<tr><td><input type="submit" value="Create Task"></td></tr>					
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
