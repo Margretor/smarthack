@@ -9,7 +9,11 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="EclipseLink" />
         <datasource-mapping>
+<<<<<<< HEAD
           <factory-entry name="entityManagerFactory" />
+=======
+          <factory-entry name="Entities" />
+>>>>>>> 818b9bfa8f8dc014c6ab97cbf02287b6957bc863
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/java/META-INF/persistence.xml" />
       </configuration>
