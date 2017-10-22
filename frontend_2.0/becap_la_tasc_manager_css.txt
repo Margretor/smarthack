@@ -1,0 +1,145 @@
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.settings {
+	float:right;
+}
+
+.toolbar {
+	background-color: #d6d6c2;
+}
+.dropdown:hover .news-btn{
+	background-color: #3e8e41;
+}
+.news-btn {
+	background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.profile {
+    color: white;
+	padding: 10px;
+	margin-right: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-radius: 50%;
+}
+.content{
+	height:auto;
+	min-height:900px;
+	height:100%;
+}
+.right{
+	float:right;
+	width:40%;
+	min-height:500px;
+	height:100%;
+}
+.left{
+	border-right:solid;
+	border-color:gray;
+	border-width:1%;
+	float:left;
+	width:59%;
+	min-height:500px;
+	height:100%;
+}
+.right-content{
+	margin-left:20%;
+	margin-right:20%;
+	margin-top:30px;
+	margin-bottom:30px;
+	
+}
+.left-content{
+	margin-left:20%;
+	margin-right:20%;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.click:hover{
+	background-color:#e1ddd4;
+}
+.click{
+	text-align:center;
+	font-size:150%;
+	vertical-align:middle;
+	border-radius:25px;
+	width:200px;
+	height:auto;
+	background-color:gray;
+}
+.click input[type=text]{
+	border:2px solid #ccc; 
+	width:200px;
+    border-radius: 5px;
+}
+.right-content input[type=submit]{
+	border:2px solid #ccc;
+	width:150px;
+	height:50px;
+	font-size:200%;
+	border-radius: 5px;
+}
+.right-content p{
+	font-size:200%;
+}
+.left-content p {
+	font-size:150%;
+}
+/*
+.fields{
+	float:left;
+	background-color:white;
+}
+.buttons{
+	background-color:black;
+	float:right;
+	width:70%;
+}*/
