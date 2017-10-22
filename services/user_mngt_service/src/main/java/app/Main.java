@@ -1,23 +1,32 @@
 package app;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import controllers.UserController;
+import dao.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
+
+@EnableWebMvc
+@Configuration
+@EnableAutoConfiguration
+@ComponentScan
 public class Main {
 
+    @Autowired
+    UserRepository userRepository;
 
-    public static void main (String[] args) {
-        EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "persistanceUnit" );
-        EntityManager entitymanager = emfactory.createEntityManager();
+    @Bean
+    public UserController userController(){
+        return new UserController(userRepository);
+    }
 
-        entitymanager.getTransaction().begin();
-
-//        entitymanager.persist(person);
-
-        entitymanager.getTransaction().commit();
-        entitymanager.close();
-
-
+    public static void main(String[] args) {
+        SpringApplication.run(Main.class, args);
     }
 }

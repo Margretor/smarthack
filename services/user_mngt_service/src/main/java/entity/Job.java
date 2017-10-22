@@ -1,3 +1,5 @@
+package entity;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -14,6 +16,7 @@ public class Job {
     private int deleteTask;
     private int assignTeam;
 
+    public Job() {}
 
     public int getId() {
         return id;
